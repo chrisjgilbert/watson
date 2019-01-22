@@ -7,7 +7,7 @@ class ToneAnalyzer:
         self.tone_analyzer = tone_analyzer(
             version='2017-09-21',
             iam_apikey='BdDsmJd471Ez1TtMrk3bFoQawd0ETZGwsGNo3aS7ZPCC',
-            url= 'https://gateway-lon.watsonplatform.net/tone-analyzer/api'
+            url= 'https://gateway-lon.watsonplatform.net/tone-analyzer/api/v3/tone?version=2017-09-21&sentences=false'
         )
 
     def send_for_analysis(self, text):
