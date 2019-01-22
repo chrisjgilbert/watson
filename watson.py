@@ -3,8 +3,8 @@ from watson_developer_cloud import ToneAnalyzerV3
 
 class ToneAnalyzer:
 
-    def __init__(self):
-        self.tone_analyzer = ToneAnalyzerV3(
+    def __init__(self, tone_analyzer = ToneAnalyzerV3):
+        self.tone_analyzer = tone_analyzer(
             version='2017-09-21',
             iam_apikey='BdDsmJd471Ez1TtMrk3bFoQawd0ETZGwsGNo3aS7ZPCC',
             url= 'https://gateway-lon.watsonplatform.net/tone-analyzer/api'
@@ -15,4 +15,4 @@ class ToneAnalyzer:
             { 'text': text },
             'application/json',
         ).get_result()
-        print(json.dumps(tone_analysis, indent=2))
+        return tone_analysis
