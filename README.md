@@ -8,7 +8,7 @@ A Python module that returns sentiment analysis on a string using the IBM Watson
 * In project root `pip3 install --upgrade watson-developer-cloud`
 
 ## How to run  
-* In project root `python3 -i watson.py`
+* In project root `python3 -i lib/watson.py`
 * Then in python REPL:  
 ```python
 >>> tone_analyzer = ToneAnalyzer()
