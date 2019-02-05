@@ -1,6 +1,7 @@
 import json
 from watson_developer_cloud import ToneAnalyzerV3
 import os
+
 api_key = os.environ.get('WATSON_TONE_ANALYZER')
 
 class ToneAnalyzer:
@@ -17,4 +18,4 @@ class ToneAnalyzer:
             { 'text': text },
             'application/json',
         ).get_result()
-        return tone_analysis
+        return json.dumps(tone_analysis)
