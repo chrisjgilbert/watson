@@ -3,12 +3,13 @@
 A Python module that returns sentiment analysis on a string using the IBM Watson SDK.
 
 ## How to set up   
-* clone this repo
-* [Sign up for an api key here](https://cloud.ibm.com/apidocs/tone-analyzer) and save in ENV as `WATSON_TONE_ANALYZER`
-* In project root `pip install --upgrade watson-developer-cloud`
+* Clone this repo
+* [Sign up for an IBM Developer Cloud Tony Anaylzer API Key](https://cloud.ibm.com/apidocs/tone-analyzer) and save in ENV as `WATSON_TONE_ANALYZER`
+* In project root `pip3 install --upgrade watson-developer-cloud`
 
 ## How to run  
-* `python3 -i watson.py `   
+* In project root `python3 -i watson.py`
+* Then in python REPL:  
 ```python
 >>> tone_analyzer = ToneAnalyzer()
 >>> tone_analyzer.send_for_analysis('i am super excited about today')
